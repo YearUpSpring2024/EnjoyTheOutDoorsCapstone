@@ -105,7 +105,7 @@ window.onload = function () {
         //first start with the div
         // class cold-md-4
         let parkColumnDiv = document.createElement("div");
-        parkColumnDiv.className = "col-md-6";
+        parkColumnDiv.className = "col-md-4";
 
         // class card h-100
         let parksCardDiv = document.createElement("div");

@@ -1,0 +1,85 @@
+ body {
+     font-family: 'Arial', sans-serif;
+     background-color: #f5f5f5;
+ }
+
+ main {
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+#story:hover {
+    color: #f1e8d8;
+    background-color: black;
+    /* rotate */
+    transform: rotate(-0.1deg);
+
+    transition: all 0.3s ease-in-out;
+}
+
+#story a {
+color: white;
+background-color: black;
+}
+
+#story h2{
+    color: rgb(229, 212, 30);
+    
+}
+
+ .back{
+    background-image: url('/images/Cannon-StoryImg_2.jpg');
+ }
+
+ .form-group {
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ h1,
+ h2 {
+     color: #333;
+     font-weight: bold;
+ }
+
+ label {
+     color: #666;
+     font-weight: bold;
+ }
+
+ select.form-control {
+     border: 2px solid #ccc;
+     border-radius: 5px;
+ }
+
+ button.btn {
+     margin-top: 20px;
+     border-radius: 5px;
+     transition: all 0.3s ease;
+ }
+
+ button.btn:hover {
+     transform: translateY(-3px);
+     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ #nationalParkRow {
+     margin-top: 30px;
+ }
+
+ footer {
+     background-color: #000;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+ }
+
+ footer a {
+     color: #fff;
+     text-decoration: underline;
+ }
+
+ footer a:hover {
+     color: #ddd;
+ }

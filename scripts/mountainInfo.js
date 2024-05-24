@@ -3,10 +3,8 @@
 window.onload = function () {
     const mountainSearchDropdown = document.getElementById("mountainSearchDropdown");
     const showResultDiv = document.getElementById("showResultDiv");
-
     // Populate dropdown with mountain names
     for (let index = 0; index < mountainsArray.length; index++) {
-
         // get the current mountain obj from the mountains array
         const mountain = mountainsArray[index];
         // create a new option
@@ -69,7 +67,6 @@ window.onload = function () {
         coordsMountain.innerHTML = "Coordinates: Latitude " + mountain.coords.lat + ", Longitude " + mountain.coords.lng;
         descMountain.innerHTML = mountain.desc;
 
-
         // adding the infor inside of the parent tag
         showResultDiv.appendChild(nameOfMountain);
         showResultDiv.appendChild(imageOfMountain);
@@ -78,7 +75,6 @@ window.onload = function () {
         showResultDiv.appendChild(descMountain);
         showResultDiv.appendChild(coordsMountain);
     }
-
     // fetch sunrise or sunset data for the selected mountains
     async function getMountSunset(latitude, longitude) {
         // fetch the sunrise and sunset data from the api

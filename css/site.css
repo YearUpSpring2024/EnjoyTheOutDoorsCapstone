@@ -1,21 +1,13 @@
-main{
-  
-background-color: #333;
-}
-
 .container {
   max-width: 960px;
 }
-
 .icon-link > .bi {
   width: .75em;
   height: .75em;
 }
-
 /*
  * Custom translucent site header
  */
-
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -29,11 +21,6 @@ background-color: #333;
   color: #fff;
   text-decoration: none;
 }
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
 .product-device {
   position: absolute;
   right: 10%;
@@ -44,7 +31,6 @@ background-color: #333;
   border-radius: 21px;
   transform: rotate(30deg);
 }
-
 .product-device::before {
   position: absolute;
   top: 10%;
@@ -55,7 +41,6 @@ background-color: #333;
   background-color: rgba(255, 255, 255, .1);
   border-radius: 5px;
 }
-
 .product-device-2 {
   top: -25%;
   right: auto;
@@ -64,7 +49,142 @@ background-color: #333;
   background-color: #e5e5e5;
 }
 
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #857e00;
+}
+
+a {
+  color: #857e00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #857e00;
+  text-decoration: underline;
+}
+
+.main {
+  background-color: black;
+  padding: 20px;
+}
+
+/* Header Section */
+.position-relative.overflow-hidden {
+  background: linear-gradient(to bottom right, black, white);
+  color: #fff;
+}
+
+.position-relative.overflow-hidden h1,
+.position-relative.overflow-hidden h3 {
+  color: #fff;
+}
+
+.icon-link {
+  background-color: #fff;
+  color: #b38f00;
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover {
+  background-color: #b38f00;
+  color: #fff;
+}
+
+.icon-link svg {
+  margin-left: 5px;
+}
+
+/* Featured Articles Section */
+.album.py-5.bg-body-tertiary {
+  background-color: #e9ecef;
+}
+
+.album .dark {
+  display: block;
+  font-size: 24px;
+  color: #004085;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.album .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h4 {
+  color: #b38f00;
+}
+
+.btn-outline-secondary {
+  color: #b38f00;
+  border-color: #b38f00;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #b38f00;
+  color: #fff;
+}
+
+/* Blog Post Section */
+.blog-post h2,
+.blog-post h3 {
+  color: #b38f00;
+}
+
+.blog-post-meta a {
+  color: #b38f00;
+}
+
+.blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 5px solid #ddd;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+/* About Section */
+.position-sticky .bg-body-tertiary {
+  background-color: #e9ecef;
+  padding: 15px;
+}
+
+.position-sticky .fst-italic {
+  color: #0056b3;
+}
+
+/* Recent Posts Section */
+.list-unstyled a {
+  transition: transform 0.3s ease;
+}
+
+.list-unstyled a:hover {
+  transform: scale(1.02);
+}
+
+
+/* .date{
+  color: whitesmoke;
+} */
 /*
  * Extra utilities
  */
@@ -76,4 +196,20 @@ background-color: #333;
   .flex-md-equal > * {
     flex: 1;
   }
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #ddd;
 }
