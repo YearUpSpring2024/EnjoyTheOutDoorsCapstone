@@ -36,7 +36,3 @@ Contributions to the project are welcome! If you have any ideas for improvements
 ## License
 
 This project is licensed under the [MIT License](LICENSE), which means you are free to use, modify, and distribute the code for personal and commercial purposes.
-
-## Project Link
-
-[National Parks Directory](https://github.com/yourusername/national-parks-directory)
