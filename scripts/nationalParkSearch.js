@@ -13,7 +13,6 @@ const nationalParkRow = document.getElementById("nationalParkRow");
 
 // when the window loads, execute this function
 window.onload = function () {
-
     // Getting length of the National parks Array
     let nationalParksArrayLength = nationalParksArray.length;
     // adding the selected park dropDown menu
@@ -25,7 +24,9 @@ window.onload = function () {
     }
     //initializing an empty array to store each unique state
     let setOfState = [];
-    // grabbing the link
+
+
+    // grabbing the length
     let lengthOfNationalPark = nationalParksArray.length;
     // loop through each state of national Park
     for (let i = 0; i < lengthOfNationalPark; i++) {
@@ -52,6 +53,9 @@ window.onload = function () {
         }
     }
 
+    // sorting the state to be in alphabetical order
+    setOfState.sort();
+
     //add the state in the dropDown Menu
     let setOfstateLength = setOfState.length;
     for (let i = 0; i < setOfstateLength; i++) {
@@ -69,14 +73,12 @@ window.onload = function () {
         option.innerHTML = parkTypesArray[i];
         parkTypeSelect.appendChild(option);
     }
-
     // show all of the parks
     viewAllButton.onclick = function () {
         nationalParkRow.innerHTML = '';
         // call showResultss -> while passing it nationaParksArray
         showResults(nationalParksArray);
     }
-
     // clear the filters
     clearFilterButton.onclick = function () {
         // set the it to an empty string
@@ -99,19 +101,16 @@ window.onload = function () {
             nationalParkRow.appendChild(parkElement);
         }
     }
-
     //function to create column for each element
     function createParkColumn(nationalPark) {
         //first start with the div
         // class cold-md-4
         let parkColumnDiv = document.createElement("div");
         parkColumnDiv.className = "col-md-4";
-
         // class card h-100
         let parksCardDiv = document.createElement("div");
         parksCardDiv.className = 'card h-100';
         parkColumnDiv.appendChild(parksCardDiv);
-
         // card image
         // class card-img-top
         let parkImage = document.createElement("img");
@@ -143,6 +142,7 @@ window.onload = function () {
         cityOfThePark.className = 'card-text';
         cityOfThePark.innerHTML = "City: " + nationalPark.City;
         cardBodydiv.appendChild(cityOfThePark);
+
         // if there is no phone
         if (!nationalPark.Phone) {
             let noParkPhone = document.createElement("p");
@@ -171,8 +171,6 @@ window.onload = function () {
         parkAddress.className = "card-text";
         parkAddress.innerHTML = "Address: " + nationalPark.Address + ' ' + nationalPark.City + " " + nationalPark.State + " " + nationalPark.ZipCode;
         cardBodydiv.appendChild(parkAddress);
-
-
         // checking to see if there is a link to vitsit
         if (nationalPark.Visit) {
             let parkVisitLink = document.createElement("a");
@@ -188,7 +186,6 @@ window.onload = function () {
         }
         return parkColumnDiv
     }
-
     // and parkType is the string representing the parkType Filter
     function filterByParkTypes(park, parkType) {
         // to store the filtered parks

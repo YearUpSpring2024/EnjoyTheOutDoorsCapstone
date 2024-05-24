@@ -3,7 +3,7 @@
 window.onload = function () {
     const mountainSearchDropdown = document.getElementById("mountainSearchDropdown");
     const showResultDiv = document.getElementById("showResultDiv");
-    // Populate dropdown with mountain names
+    // add dropdown with mountain names
     for (let index = 0; index < mountainsArray.length; index++) {
         // get the current mountain obj from the mountains array
         const mountain = mountainsArray[index];
@@ -67,7 +67,7 @@ window.onload = function () {
         coordsMountain.innerHTML = "Coordinates: Latitude " + mountain.coords.lat + ", Longitude " + mountain.coords.lng;
         descMountain.innerHTML = mountain.desc;
 
-        // adding the infor inside of the parent tag
+        // adding the info inside of the parent tag
         showResultDiv.appendChild(nameOfMountain);
         showResultDiv.appendChild(imageOfMountain);
         showResultDiv.appendChild(elevationOfMountain);
